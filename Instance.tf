@@ -83,7 +83,5 @@ resource "aws_security_group" "my_sg"{
    key_name = "Shubham"
    instance_type =  "t2.micro"
    vpc_security_group_ids = [ "aws_security_group.my_sg.id" ]
-   tags = {
-     Name = "spiderman instance"
-   }
+  
  }
