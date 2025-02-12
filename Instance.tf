@@ -104,7 +104,7 @@
 
   # Launch EC2 Instance in Public Subnet using direct resource reference for security group
   resource "aws_instance" "my_ec2" {
-    ami                   = "ami-0c50b6f7dc3701ddd"
+    ami                   = "ami-00bb6a80f01f03502"
     instance_type         = "t2.micro"
     key_name              = "devopskey"
     subnet_id             = aws_subnet.public_subnet.id
